@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="main.css" />
     <script src="app.js"></script>
   </head>
   <body>
@@ -79,13 +79,29 @@
           <div class="mySlides fade">
             <div class="welcome-finanza">Welcome to Finanza</div>
             <h2>Your Financial Status Is Our Goal</h2>
-            <button>explore more</button>
-            <img src="img/slide-img-1.png" alt="slide img 1" />
+            <button id="myBtn">explore more</button>
+            <img
+              class="slide-img-1"
+              src="img/slide-img-1.png"
+              alt="slide img 1"
+            />
           </div>
           <div class="mySlides fade">
-            <h2></h2>
+            <h2>Friendly and attentive employees</h2>
+            <img
+              class="slide-img-2"
+              src="img/slide-img-2.png"
+              alt="slide img 2"
+            />
           </div>
-          <div class="mySlides fade"></div>
+          <div class="mySlides fade">
+            <h2>Fast and easy services</h2>
+            <img
+              class="slide-img-3"
+              src="img/slide-img-3.png"
+              alt="slide img 3"
+            />
+          </div>
           <a class="prev" onclick="plusSlides(-1)"
             ><img src="img/prev.png" alt="prev arrow"
           /></a>
@@ -93,7 +109,14 @@
             <img src="img/next.png" alt="next arrow"
           /></a>
         </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+        </div>
       </header>
+      <main></main>
     </div>
   </body>
 </html>
