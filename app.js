@@ -72,3 +72,15 @@ function showTabsContent(b) {
     tabContent[b].classList.add("show");
         }
       }
+
+//ვალიდაციები
+function validateInput() {
+  let subject = document.getElementById("subject").value;
+
+  if (subject.length <= 5) {
+      document.getElementById("errorText").innerHTML = "Error: Input must be more than 5 characters.";
+  } else {
+      document.getElementById("errorText").innerHTML = "";
+      // Continue with your logic for valid input
+  }
+}
