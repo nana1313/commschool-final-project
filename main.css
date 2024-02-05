@@ -481,6 +481,7 @@
   font-size: 16px;
   background-color: #355efc;
   color: #f5f5f5;
+  border: none;
 }
 .call-back {
   display: flex;
@@ -580,4 +581,80 @@
   font-family: opensans-bold;
   font-size: 16px;
   color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .grow-business-info h5{
+    font-size: 35px;
+  }
+  #tabs{
+    margin-top: 20px;
+  }
+  .choosing{
+    flex-direction: column;
+    margin-top: 300px;
+  }
+  .choosing-txt-container{
+    align-items: center;
+  }
+  .choosing-txt-container h5{
+    text-align: center;
+  }
+  .choosing-txt-container p{
+    text-align: center;
+  }
+  .our-services{
+    margin-top: 310px;
+  }
+  .services-container{
+    flex-direction: column;
+    margin-top: 400px;
+    gap: 60px;
+  }
+  .call-beck-blue {
+    margin-top: 540px;
+  }
+  .experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .experience h5{
+    text-align: center;
+  }
+  .experiance-txt{
+    text-align: center;
+  }
+  .footer-signup-input{
+    width: 200px;
+  }
+  .footer-signup-buttom{
+    margin-left: 137px;
+  }
+  .mySlides h2{
+    z-index: 1;
+    font-size: 35px;
+    max-width: 290px;
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  .slide-img-1 {
+    max-width: 809px;
+    height: auto;
+  }
+  .slide-img-2{
+    max-width: 522px;
+    height: auto;
+  }
+  .slide-img-3{
+    max-width: 644px;
+    height: auto;
+  }
+  .experience-done{
+    justify-content: center;
+  }
+  .experience button{
+    margin: 0 auto;
+  }
 }
