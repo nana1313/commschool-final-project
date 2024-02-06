@@ -3,6 +3,9 @@
   width: 100%;
   height: 601px;
 }
+.grow-business-img img{
+  width: 100%;
+}
 .grow-business-about-us {
   max-width: 99px;
   width: 100%;
@@ -587,6 +590,7 @@ form{
   max-width: 632px;
   width: 100%;
   height: auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -679,4 +683,148 @@ textarea[type="text"]
   .experience button{
     margin: 0 auto;
   }
+}
+@media (max-width: 720px) {
+  .header-map-clock, .header-email-phone{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .header-logo-navbar{
+    flex-direction: column;
+  }
+  .header-navbar-socials{
+    flex-direction: column;
+  }
+  .header-navbar ul{
+    margin-top: -60px;
+  }
+  .header-socials{
+    margin-top: -72px;
+  }
+  .header-slide {
+  margin-top: 47px;
+}
+.welcome-finanza {
+  font-size: 10px;
+  width: 111px;
+  height: 31px;
+  top: 0px;
+  left: 56px;
+}
+.mySlides h2{
+  font-size: 16px;
+    max-width: 120px;
+    top: 30px;
+    left: -39px;
+}
+.prev, 
+.next{
+  top: 44%;
+}
+.mySlides button {
+  width: 100px;
+    height: 34px;
+    font-size: 12px;
+    top: 169px;
+    left: 97px;
+}
+.slide-img-2 {
+  max-width: 290px;
+}
+.slide-img-3{
+  max-width: 306px;
+  top: 50px;
+}
+.grow-business{
+  flex-direction: column;
+}
+.grow-business-info{
+  margin-top: -111px;
+  align-items: center;
+}
+.benefits-container{
+  flex-direction: column;
+  height: auto;
+}
+.dedicated-team,
+.benefits-box-1{
+  border-right: none;
+  border-bottom: 1px solid #909de2;
+  padding-bottom: 23px;
+}
+.round-up-container{
+  flex-direction: column;
+  height: auto;
+  gap: 30px;
+  padding-top: 40px;
+}
+.choosing-txt-container p{
+  margin-top: 3px;
+}
+.choosing-tabs{
+  flex-direction: column;
+}
+.our-services{
+  margin-top: 510px;
+}
+.planing-item-white,
+.planing-item {
+  max-width: 314px;
+}
+.call-back-container h3 {
+  font-size: 36px;
+}
+.call-back-inputs,
+#message {
+  max-width: 385px;
+  height: auto;
+}
+#name, #email, #phone, #subject {
+  height: 15px;
+}
+#message {
+  height: 65px;
+}
+.footer-contact {
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  height: 1300px;
+}
+.footer-rights{
+  height: 219px;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.rights {
+  font-size: 13px;
+}
+.redesigned{
+  margin-top: -73px;
+  font-size: 13px;
+}
+.our-office {
+  margin-top: 154px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-office h5, .service h5, .newsletter h5{
+  text-align: center;
+}
+.newsletter p{
+  text-align: center;
+}
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grow-business-info h5,
+.grow-business-info p{
+  text-align: center;
+}
+.choosing{
+  margin-top: 505px;
+}
 }

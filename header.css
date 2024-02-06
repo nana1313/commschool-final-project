@@ -98,7 +98,8 @@ header {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  max-width: 76px;
+  width: 100%;
   padding: 16px;
   margin-top: -79px;
   color: white;
