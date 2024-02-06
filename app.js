@@ -46,6 +46,8 @@ window.onload = function () {
   tab = document.getElementsByClassName("tab");
   hideTabsContent(1);
 };
+
+
 document.getElementById("tabs").onclick = function (event) {
   let target = event.target;
   if (target.className == "tab") {
@@ -74,13 +76,43 @@ function showTabsContent(b) {
       }
 
 //ვალიდაციები
-function validateInput() {
-  let subject = document.getElementById("subject").value;
+let phone = document.getElementById('phone');
+phone.addEventListener("click", function(){
+  phone.value = "+995";
+})
 
-  if (subject.length <= 5) {
-      document.getElementById("errorText").innerHTML = "Error: Input must be more than 5 characters.";
-  } else {
-      document.getElementById("errorText").innerHTML = "";
-      // Continue with your logic for valid input
-  }
-}
+const form = document.getElementById('form')
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            
+            try{
+                let form = document.forms.form
+                const validateEmail = (email) => {
+                    return String(email)
+                    .toLowerCase()
+                    .match(
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    );
+                };
+                if(! validateEmail(form.email.value)){
+                    throw new Error ('Email is not valid')
+                    return
+                }
+                if(form.subject.value.length < 5){
+                    throw new Error ('Subject must be longer than 5 characters');
+                    return
+                }
+                if(form.phone.value.length > 11 || form.phone.value.length < 11){
+                    throw new Error ('Mobile number should be 9 digits');
+                }
+            }
+            catch(e){
+                const p = document.createElement('p');
+                p.textContent = e.message;
+                p.style.color = "red"
+                p.style.fontFamily = "opensans";
+                p.style.textAlign = "center";
+                form.appendChild(p);
+            }
+            document.getElementById("form").reset();
+        })
